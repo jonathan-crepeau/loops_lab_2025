@@ -105,4 +105,66 @@
 // console.log(divideThreeNums(2, 3, 6));
 
 
-// • 
+// • Write a function calculateArea that takes two parameters width and length and multiplies them. This will give us the area of a rectangle. Invoke the function a couple of times with different arguments each time:
+
+// function calculateArea(width, length) {
+//   if (typeof width && typeof length !== 'number') return 'Provided arguments are not both numbers.';
+//   return width*length;
+// }
+
+// console.log(calculateArea(5, 8));
+// console.log(calculateArea(5, 'Jonathan'));
+
+
+// • Write a function that takes three parameters (numbers), sums them, converts the sum into a string and returns the string (eg. "123"). Use your google-fu to research converting a number into a string. Invoke the function a couple of times with different arguments each time.
+
+// function numberSumToString(num1, num2, num3) {
+//   if (typeof num1 && typeof num2 && typeof num3 === 'number') {
+//     let numTotal = num1+num2+num3;
+//     return numTotal.toString();
+//   }
+//   return "Provided arguments are not all numbers.";
+// }
+
+// console.log(numberSumToString(2, 4, 8));
+
+
+// • Write a function that takes two parameters (strings) and returns true (Boolean) if the two strings are identical, false if not.
+
+// function checkIfStringsIdentical(string1, string2) {
+//   if (typeof string1 && typeof string2 === 'string' && string1 === string2) return true;
+//   return false;
+// }
+
+// console.log(checkIfStringsIdentical('Jonathan', 'Jonathan'));
+// console.log(checkIfStringsIdentical('Jonathan', 'jonathan'));
+// console.log(checkIfStringsIdentical('Jonathan', 'Jonathan', 'Luna'));
+// console.log(checkIfStringsIdentical('Jonathan'));
+
+
+// • Writing a function to determine if a word is a Palindrome.
+
+// function checkifPalindrome(word) {
+//   if (typeof word === 'string') {
+//     if (word === word.split('').reverse().join('')) return true;
+//     return false;
+//   }
+//   return 'NOT a string';
+// }
+
+// console.log(checkifPalindrome('Jonathan'))
+
+
+// • Look into regular expressions and the .match() method. Use .match() only to select parts of a reversed string that match a pattern.
+
+// function checkIfPalindromeWithMatch(word) {
+//   if (typeof word === 'string') {
+//     if (word.toLowerCase().split('').reverse().join('').match(word.toLowerCase())) return true;
+//     return false;
+//   }
+//   return false;
+// }
+
+// console.log(checkIfPalindromeWithMatch('Luna'));
+// console.log(checkIfPalindromeWithMatch('racecar'));
+// console.log(checkIfPalindromeWithMatch('Racecar'));
